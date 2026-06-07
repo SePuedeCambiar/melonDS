@@ -2919,3 +2919,4 @@ void GPU3D::Write32(u32 addr, u32 val) noexcept
 
 }
 
+#Antes de factorizar
