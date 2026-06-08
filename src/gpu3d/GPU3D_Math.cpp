@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 #include <algorithm>
-#include "NDS.h"
-#include "GPU.h"
-#include "FIFO.h"
-#include "GPU3D_Soft.h"
-#include "Platform.h"
-#include "GPU3D.h"
+#include "../NDS.h"
+#include "../GPU.h"
+#include "../FIFO.h"
+#include "../GPU3D_Soft.h"
+#include "../Platform.h"
+#include "../GPU3D.h"
 
 namespace melonDS
 {
