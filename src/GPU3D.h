@@ -13,7 +13,7 @@
     FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License along
-    with melonDS. If not, see http://www.gnu.org/licenses/.
+    with melonDS.
 */
 
 #ifndef GPU3D_H
@@ -211,6 +211,7 @@ public:
     s32 TexMatrix[16] {};
 
     s32 ClipMatrix[16] {};
+    double ClipMatrixCache[16] {}; 
     bool ClipMatrixDirty = false;
 
     u32 Viewport[6] {};
@@ -333,8 +334,7 @@ public:
     virtual void FinishRendering() {}
     virtual void RestartFrame() {};
 
-    // return one scanline of the framebuffer, with X scroll applied
-    // this is used in software renderers
+    // return one scanline of the framebuffer, used in software renderers
     virtual u32* GetLine(int line) = 0;
 
     virtual bool NeedsShaderCompile() { return false; }
